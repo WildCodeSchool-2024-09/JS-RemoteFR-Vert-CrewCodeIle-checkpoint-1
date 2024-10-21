@@ -138,12 +138,16 @@ p {
 .projects {
 	@media screen and (min-width: 700px) {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
 		text-align: center;
 	}
 }
-
+.boxContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .box {
 	width: 25%;
 	padding: calc(var(--gutter) * 2);
