@@ -72,10 +72,10 @@ p {
 	background-color: var(--lightWildColor);
 }
 #editButton {
-	background-color: var(--lightWildColor);
+	background-color: white;
 	margin: 10px;
 	padding: 10px;
-	color: var(--borderColor);
+	color: black;
 	border: 1px solid var(--borderColor);
 	border-radius: 5px;
 }
@@ -99,6 +99,15 @@ p {
 .skills--title {
 	margin: calc(var(--gutter) * -2) 0;
 	text-align: var(--textAlign);
+}
+
+#modifyButton {
+	background-color: var(--lightWildColor);
+	margin: 10px;
+	padding: 10px;
+	color: var(--borderColor);
+	border: 1px solid var(--borderColor);
+	border-radius: 5px;
 }
 
 .column {

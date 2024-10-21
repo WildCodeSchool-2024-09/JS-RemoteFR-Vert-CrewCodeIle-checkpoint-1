@@ -64,3 +64,23 @@ document
 	.addEventListener("click", modifyNameAndColor);
 
 ////////////////////////////////
+
+// exercice 6 :
+
+function modifyListItems() {
+	const listItems = document.querySelectorAll("li");
+
+	listItems.forEach(function (element) {
+		if (element.textContent === "You can modify") {
+			const newText = prompt("Modifier le language");
+			if (newText) {
+				item.textContent = newText;
+			}
+		}
+	});
+}
+
+const buttons = document.querySelector("#editButton");
+buttons.forEach(function (button) {
+	button.addEventListener("click", modifyListItems);
+});
