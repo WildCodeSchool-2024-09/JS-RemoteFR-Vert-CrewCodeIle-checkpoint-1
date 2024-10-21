@@ -21,8 +21,18 @@ function changeAvatar(avatar) {
 	avatarContainer.appendChild(avatarImg);
 }
 
-const userName = prompt("Quel est votre nom ?");
+////////////////////////
+// ex JS 2 :
 
-if (userName) {
-	document.getElementById("firstname").textContent = userName;
+function modifyName() {
+	const userName = prompt("Quel est votre nom ?");
+
+	if (userName) {
+		document.getElementById("firstname").textContent = userName;
+	}
 }
+
+document.getElementById("editButton").addEventListener("click", modifyName);
+
+////////////////////////////////
+// ex JS 3 :
