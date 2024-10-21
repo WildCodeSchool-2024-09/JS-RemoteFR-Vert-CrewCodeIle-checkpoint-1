@@ -144,6 +144,7 @@ p {
 
 	.all-columns {
 		display: flex;
+		flex-direction: row-reverse;
 	}
 
 	.column {
