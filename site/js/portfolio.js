@@ -10,9 +10,11 @@ sectionButton.appendChild(replaceNameButton);
 replaceNameButton.appendChild(textButton);
 
 replaceNameButton.addEventListener("click", function () {
-	// prompt("Enter a color");
+	const backgroundColor = prompt("Enter a color");
 	const firstName = prompt("Enter your name");
 	const firstNameSpan = document.getElementById("firstname");
 	firstNameSpan.textContent = firstName;
 	firstNameSpan.style.color = "white";
+	const backgroundSection = document.querySelector(".pink-bg");
+	backgroundSection.style.backgroundColor = backgroundColor;
 });
