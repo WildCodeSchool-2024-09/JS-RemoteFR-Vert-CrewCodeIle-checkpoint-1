@@ -33,6 +33,8 @@ changeName.addEventListener("click", function () {
     navLink[k].style.color = getColor;
   }
 });
+
+// Changing DevTools with a loop
 modifyButton.addEventListener("click", function () {
   for (let x = 0; x < devTools.length; x++) {
     devTools[0].textContent = "VScode";
