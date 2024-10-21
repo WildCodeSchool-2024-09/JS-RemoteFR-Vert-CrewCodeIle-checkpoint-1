@@ -11,6 +11,22 @@
   --textAlign: center;
 }
 
+* {
+  outline: solid 1px red;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -32,6 +48,10 @@ p {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+
+  @media screen and (max-width: 700px) {
+    width: 0%;
+  }
 }
 
 .description {
@@ -52,9 +72,16 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column-reverse;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .skills--title {
@@ -96,6 +123,18 @@ p {
   color: var(--purple);
 }
 
+.projects {
+  @media screen and (min-width: 700px) {
+    
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+
+.disabled:disabled
+
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
@@ -103,6 +142,7 @@ p {
   margin: calc(var(--gutter) * 1.25);
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
+  
 }
 
 .purple-text {
