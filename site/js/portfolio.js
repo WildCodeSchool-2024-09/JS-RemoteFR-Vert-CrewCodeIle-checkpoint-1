@@ -22,14 +22,32 @@ function changeAvatar(avatar) {
 }
 
 ////////////////////////
-// ex JS 2 et 3 :
+// ex JS 2 et 3 et 4:
 
 function modifyNameAndColor() {
 	const userName = prompt("Quel est votre nom ?");
 
 	if (userName) {
 		document.getElementById("firstname").textContent = userName;
+
+		// exercice 3 :
+
 		document.querySelector(".pink-bg").style.backgroundColor = "#750ff7";
+		document.querySelector("#editButton").style.backgroundColor = "#750ff7";
+
+		// exercice 4 :
+
+		const pinkTextColor = document.querySelectorAll(".pink-text");
+
+		pinkTextColor.forEach(function (element) {
+			element.style.color = "#750ff7";
+		});
+
+		const colorBg = document.querySelectorAll(".pink-bg");
+
+		colorBg.forEach(function (element) {
+			element.style.backgroundColor = "#750ff7";
+		});
 	}
 }
 
