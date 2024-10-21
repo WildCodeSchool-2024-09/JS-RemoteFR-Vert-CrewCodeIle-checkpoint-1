@@ -10,7 +10,9 @@
 
 	--textAlign: center;
 }
-
+/* * {
+	outline: solid 1px red;
+} */
 img {
 	max-width: 100%;
 }
@@ -108,12 +110,35 @@ p {
 .purple-text {
 	color: var(--purple);
 }
-nav {
-	display: flexbox;
-	justify-content: space-between;
-}
 
-nav > ul {
-	display: flexbox;
-	justify-content: right;
+/* ------------------------------ */
+/* ------------------------------ */
+
+@media screen and (min-width: 700px) {
+	nav {
+		display: flexbox;
+		justify-content: space-between;
+	}
+
+	nav > ul {
+		display: flexbox;
+		justify-content: right;
+	}
+
+	header > img {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	header > h1,
+	header > p {
+		display: flexbox;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		text-align: center;
+	}
 }
