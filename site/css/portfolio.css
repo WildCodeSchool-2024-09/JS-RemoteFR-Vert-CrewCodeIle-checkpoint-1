@@ -71,6 +71,14 @@ p {
 .pink-bg {
 	background-color: var(--lightWildColor);
 }
+#editButton {
+	background-color: var(--lightWildColor);
+	margin: 10px;
+	padding: 10px;
+	color: var(--borderColor);
+	border: 1px solid var(--borderColor);
+	border-radius: 5px;
+}
 
 .skills {
 	margin-top: calc(var(--gutter) * -2);
