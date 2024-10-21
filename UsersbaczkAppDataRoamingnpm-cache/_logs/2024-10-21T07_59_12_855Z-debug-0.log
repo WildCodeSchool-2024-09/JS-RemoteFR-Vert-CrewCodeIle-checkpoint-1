@@ -1,0 +1,18 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\baczk\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v20.17.0
+3 silly config load:file:C:\Users\baczk\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\baczk\OneDrive\Bureau\JS-RemoteFR-Vert-CrewCodeIle-checkpoint-1\.npmrc
+5 silly config load:file:C:\Users\baczk\.npmrc
+6 silly config load:file:C:\Users\baczk\OneDrive\Bureau\JS-RemoteFR-Vert-CrewCodeIle-checkpoint-1\UsersbaczkAppDataRoamingnpm\etc\npmrc
+7 verbose title npm run test:2
+8 verbose argv "run" "test:2"
+9 verbose logfile logs-max:10 dir:C:\Users\baczk\OneDrive\Bureau\JS-RemoteFR-Vert-CrewCodeIle-checkpoint-1\UsersbaczkAppDataRoamingnpm-cache\_logs\2024-10-21T07_59_12_855Z-
+10 verbose logfile C:\Users\baczk\OneDrive\Bureau\JS-RemoteFR-Vert-CrewCodeIle-checkpoint-1\UsersbaczkAppDataRoamingnpm-cache\_logs\2024-10-21T07_59_12_855Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd C:\Users\baczk\OneDrive\Bureau\JS-RemoteFR-Vert-CrewCodeIle-checkpoint-1
+13 verbose os Windows_NT 10.0.22631
+14 verbose node v20.17.0
+15 verbose npm  v10.9.0
+16 verbose exit 1
+17 verbose code 1
