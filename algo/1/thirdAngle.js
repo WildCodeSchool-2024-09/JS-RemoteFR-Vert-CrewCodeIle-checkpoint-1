@@ -5,9 +5,14 @@ Ex:
 thirdAngle(90, 30) doit retourner 60
 thirdAngle(20, 80) doit retourner 80
 */
+const a = 90
+const b = 30
 
 function thirdAngle(a, b) {
-  // Your code here !
+  const c = 180
+return c-(a+b)
 }
+
+console.log(thirdAngle(a, b));
 
 module.exports = thirdAngle;
