@@ -15,13 +15,7 @@ function isLeapYear(year) {
   const rule12 = year % 100;
   const rule2 = year % 400;
 
-  if ((rule11 === 0) && ((rule12 != 0))) {
-    return result = true;
-  } else {
-    return result = false;
-  }
-
-  if (rule2 === 0) {
+  if (((rule11 === 0) && (rule12 != 0)) || (rule2 === 0)) {
     return result = true;
   } else {
     return result = false;
