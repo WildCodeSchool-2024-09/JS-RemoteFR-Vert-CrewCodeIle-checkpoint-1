@@ -136,6 +136,10 @@ p {
 	box-shadow: var(--styledShadow);
 }
 
+.disabled {
+	opacity: 0.5;
+}
+
 .purple-text {
 	color: var(--purple);
 }
