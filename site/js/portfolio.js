@@ -22,17 +22,19 @@ function changeAvatar(avatar) {
 }
 
 ////////////////////////
-// ex JS 2 :
+// ex JS 2 et 3 :
 
-function modifyName() {
+function modifyNameAndColor() {
 	const userName = prompt("Quel est votre nom ?");
 
 	if (userName) {
 		document.getElementById("firstname").textContent = userName;
+		document.querySelector(".pink-bg").style.backgroundColor = "#750ff7";
 	}
 }
 
-document.getElementById("editButton").addEventListener("click", modifyName);
+document
+	.getElementById("editButton")
+	.addEventListener("click", modifyNameAndColor);
 
 ////////////////////////////////
-// ex JS 3 :
