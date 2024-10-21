@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/WildCodeSchool/js_checkpoint1#readme",
   "devDependencies": {
+    "type": "module",
     "jest": "^29.7.0"
   }
 }
