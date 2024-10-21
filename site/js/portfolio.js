@@ -32,16 +32,19 @@ listButton.style.color= "white"
 SectionFrontEnd.appendChild(listButton)
 
 const sectionBackEnd = document.querySelector(".column > ul")
+sectionBackEnd.style.display = "flex"
+sectionBackEnd.style.flexDirection = "column-reverse"
 const formulaire = document.createElement("form")
 formulaire.style.display = "flex"
 formulaire.style.height = "100%"
 formulaire.style.gap = "1rem"
 formulaire.style.height = "2rem"
 formulaire.style.margin = "0.5rem"
+
 const inputAddLanguage = document.createElement("input")
 inputAddLanguage.style.width =  "70%"
 
-
+const arrayOfListBackEnd = sectionBackEnd.querySelectorAll("li")
 const AddButton = document.createElement("button")
 AddButton.textContent = "Add"
 AddButton.style.width = "25%"
@@ -51,6 +54,8 @@ AddButton.style.border = "none"
 AddButton.style.backgroundColor = "var(--lightWildColor)"
 AddButton.style.color= "white"
 AddButton.style.textAlign = "start"
+AddButton.type = "submit"
+console.log(arrayOfListBackEnd)
 
 sectionBackEnd.appendChild(formulaire)
 formulaire.appendChild(inputAddLanguage)
@@ -94,7 +99,12 @@ listButton.addEventListener("click", () => {
     }
 })
 
-
+formulaire.addEventListener("submit", (event) => {
+    event.preventDefault()
+    createList= document.createElement("li")
+    createList.textContent = inputAddLanguage.value
+    sectionBackEnd.appendChild(createList)
+})
 
 
 

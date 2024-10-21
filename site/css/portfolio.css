@@ -11,10 +11,6 @@
   --textAlign: center;
 }
 
-* {
-  outline: solid 1px red;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
