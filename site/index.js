@@ -22,3 +22,13 @@ changeNameButton.addEventListener('click', function() {
     oldName.textContent = newName; 
 });
 
+// step 3 
+
+const changeColorButton = document.querySelector('#changeNameBtn'); 
+const newColorArticle = document.querySelector('article'); 
+
+changeColorButton.addEventListener('click', function() {
+    newColorArticle.style.backgroundColor = '#750ff7';
+    newColorArticle.style.color = '#FFFFFF';
+});
+
