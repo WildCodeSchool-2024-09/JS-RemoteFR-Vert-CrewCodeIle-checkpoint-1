@@ -48,6 +48,14 @@ function modifyNameAndColor() {
 		colorBg.forEach(function (element) {
 			element.style.backgroundColor = "#750ff7";
 		});
+
+		// exercice 5 :
+
+		const linkColor = document.querySelectorAll("a");
+
+		linkColor.forEach(function (element) {
+			element.style.color = "#750ff7";
+		});
 	}
 }
 
