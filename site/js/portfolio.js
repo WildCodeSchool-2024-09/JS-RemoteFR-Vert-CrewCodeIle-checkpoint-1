@@ -1,5 +1,5 @@
 const avatarImage = document.getElementById("avatar");
-avatarImage.addEventListener("click", function () {
+avatarImage.addEventListener("click", () => {
 	avatarImage.src = "image/avatar.svg";
 });
 
@@ -9,12 +9,16 @@ const textButton = document.createTextNode("modify text and color");
 sectionButton.appendChild(replaceNameButton);
 replaceNameButton.appendChild(textButton);
 
-replaceNameButton.addEventListener("click", function () {
-	const backgroundColor = prompt("Enter a color");
+replaceNameButton.addEventListener("click", () => {
+	const myColor = prompt("Enter a color");
 	const firstName = prompt("Enter your name");
 	const firstNameSpan = document.getElementById("firstname");
 	firstNameSpan.textContent = firstName;
 	firstNameSpan.style.color = "white";
-	const backgroundSection = document.querySelector(".pink-bg");
-	backgroundSection.style.backgroundColor = backgroundColor;
+	const background = document.querySelector(".pink-bg");
+	const textColor = document.querySelectorAll(".pink-text");
+	background.style.backgroundColor = myColor;
+	textColor.forEach(function (textColor) {
+		textColor.style.color = myColor;
+	});
 });
