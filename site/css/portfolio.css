@@ -50,6 +50,9 @@ p {
 	margin: 0;
 	margin-top: calc(var(--gutter) * 5);
 	margin-bottom: calc(var(--gutter) * -0.3125);
+	@media screen and (max-width: 700px) {
+		display: none;
+	}
 }
 
 .description {
