@@ -11,6 +11,10 @@
 	--textAlign: center;
 }
 
+* {
+	outline: 1px solid red;
+}
+
 img {
 	max-width: 100%;
 }
@@ -125,6 +129,15 @@ p {
 
 .projects a {
 	color: var(--purple);
+}
+
+.projects {
+	@media screen and (min-width: 700px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 .box {
