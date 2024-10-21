@@ -74,7 +74,7 @@ function modifyListItems() {
 		if (element.textContent === "You can modify") {
 			const newText = prompt("Modifier le language");
 			if (newText) {
-				item.textContent = newText;
+				element.textContent = newText;
 			}
 		}
 	});
