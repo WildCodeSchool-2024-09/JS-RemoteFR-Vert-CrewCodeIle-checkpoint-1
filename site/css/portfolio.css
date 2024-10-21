@@ -108,3 +108,39 @@ p {
 .purple-text {
   color: var(--purple);
 }
+.disabled{
+  opacity: 0.50;
+}
+
+/*Responsive min 700px*/
+@media (min-width: 700px){
+  header nav{
+    justify-content: space-between;
+  }
+  main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .skills--title{
+    display: none;
+  }
+}
+/*Max 700px*/
+@media (max-width: 700px){
+  .desktop{
+    display: none;
+  }
+  .skills{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .skills--title{
+    display: none;
+  }
+}
