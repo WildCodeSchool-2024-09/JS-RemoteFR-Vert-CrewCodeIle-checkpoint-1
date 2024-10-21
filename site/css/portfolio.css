@@ -154,4 +154,8 @@ p {
   color: var(--purple);
 }
 
-.disabled:disabled
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+  }
