@@ -4,6 +4,11 @@
   --cardColor: #ffffff;
   --borderColor: #e6ecf8;
   --shadowColor: #e9f0f380;
+  --textDescriptionColor: #2c2929;
+  --textTitleColor: #000000;
+  --purple: #ff00f2;
+
+
 
   --styledBorder: var(--borderTemplate) var(--borderColor);
   --styledShadow: 0 5px 5px 0 var(var(--shadowColor));
@@ -23,9 +28,16 @@ p {
   padding: 0 var(--gutter);
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
+  color: var(--purple);
 }
 
 .desktop {
@@ -42,9 +54,17 @@ p {
   padding: calc(var(--gutter) * 3.75);
 }
 
+
 .description p {
   width: 60%;
   text-align: var(--textAlign);
+  color: var(--textDescriptionColor);
+}
+
+.description h1 {
+  width: 60%;
+  text-align: var(--textAlign);
+  color: var(--textTitleColor);
 }
 
 .pink-bg {
