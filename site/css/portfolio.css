@@ -29,9 +29,12 @@ p {
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 .menu {
@@ -46,6 +49,12 @@ nav {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+.desktop img {
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
 .description {
   color: var(--light);
   display: flex;
@@ -55,16 +64,24 @@ nav {
 }
 
 
+
 .description p {
-  width: 60%;
-  text-align: var(--textAlign);
+  @media screen and (min-width: 700px) {
+    width: 60%;
+    text-align: var(--textAlign);
+  }
+
   color: var(--textDescriptionColor);
+
 }
 
 .description h1 {
-  width: 60%;
-  text-align: var(--textAlign);
-  color: var(--textTitleColor);
+  @media screen and (min-width: 700px) {
+    width: 60%;
+    text-align: var(--textAlign);
+  }
+
+  color: var(--textDescriptionColor);
 }
 
 .pink-bg {
@@ -72,9 +89,22 @@ nav {
 }
 
 .skills {
-  margin-top: calc(var(--gutter) * -2);
-  border-radius: var(--radius);
-  padding: 0 10%;
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: calc(var(--gutter) * -2);
+    border-radius: var(--radius);
+    padding: 0 10%;
+  }
+
 }
 
 .skills--title {
