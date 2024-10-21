@@ -119,17 +119,22 @@ p {
   color: var(--purple);
 }
 
+.projects > p,
+.projects > h2 {
+  width: 100%;
+  text-align: center;
+}
+
 .projects {
-  @media screen and (min-width: 700px) {
-    
-  
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 700px) {
+  flex-direction: row;
+  justify-content: center;
   }
 }
 
-.disabled:disabled
+
 
 .box {
   width: 25%;
@@ -139,8 +144,14 @@ p {
   border-radius: var(--radius);
   box-shadow: var(--styledShadow);
   
+  @media screen and (max-width: 700px){
+    width: 80%;
+    
+  }
 }
 
 .purple-text {
   color: var(--purple);
 }
+
+.disabled:disabled
