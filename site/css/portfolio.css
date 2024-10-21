@@ -27,6 +27,9 @@ p {
   display: flex;
   margin-bottom: var(--gutter);
 }
+.banner {
+  text-align: center;
+}
 
 .desktop {
   margin: 0;
@@ -105,6 +108,63 @@ p {
   box-shadow: var(--styledShadow);
 }
 
+.in-development a {
+  opacity: 0.5;
+}
+
 .purple-text {
   color: var(--purple);
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 700px) {
+  .desktop {
+  display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction:column-reverse;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    margin-left: auto;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .desktop {
+    display: block;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .column {
+    flex: 1;
+    gap: 0;
+  }
 }
