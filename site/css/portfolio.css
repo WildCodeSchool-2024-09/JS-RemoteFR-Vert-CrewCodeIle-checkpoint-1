@@ -120,6 +120,7 @@ p {
 
 @media screen and (min-width: 700px) {
   header nav {
+    display: flex;
     justify-content: space-between;
   }
 
@@ -157,8 +158,24 @@ p {
   #desktop-image {
     display: none;
   }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
   .skills {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #project-presentation {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
   }
 }
