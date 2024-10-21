@@ -76,6 +76,10 @@ p {
 	margin-top: calc(var(--gutter) * -2);
 	border-radius: var(--radius);
 	padding: 0 10%;
+	@media screen and (min-width: 700px) {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .skills--title {
