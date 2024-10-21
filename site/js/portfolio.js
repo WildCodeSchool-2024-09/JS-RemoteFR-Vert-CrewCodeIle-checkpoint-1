@@ -21,4 +21,9 @@ replaceNameButton.addEventListener("click", () => {
 	textColor.forEach(function (textColor) {
 		textColor.style.color = myColor;
 	});
+	const linkColor = document.querySelectorAll("a");
+	background.style.backgroundColor = myColor;
+	linkColor.forEach(function (linkColor) {
+		linkColor.style.color = myColor;
+	});
 });
